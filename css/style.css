@@ -27,7 +27,6 @@ body {
   background-repeat: no-repeat;*/
   background-color: #ecf1f4;
   border-top: 5px solid #ff6408;
-  letter-spacing: 1px;
 }
 
 div.bg{
@@ -207,6 +206,7 @@ div.contenu {
   border-top: none;
   margin-top: 40px;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 div.border {
   position: absolute;
