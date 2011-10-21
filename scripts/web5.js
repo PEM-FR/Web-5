@@ -15,12 +15,18 @@ dojo.require("dojox.fx.ext-dojo.complex");
 dojo.require("dojo.window");
 
 dojo.ready(function(){
-	var pageLocale = location.pathname.match(/\/en\//) ? "en" : "fr",
+	var sessionLocale = sessionStorage.getItem('locale'),
+	    pageLocale = location.pathname.match(/\/en\//) ? "en" : "fr",
 		djLocale = (((dojo.locale.length > 2) ? dojo.locale.substring(0, 2) : dojo.locale) == "fr") ? "fr" : "en",
-		currentPage = (location.pathname == "/" || location.pathname == "/en/") ? "" : (djLocale != "fr") ? location.pathname.substring(4) : location.pathname.substring(1);
+		currentPage = (location.pathname == "/" || location.pathname == "/en/") 
+			? "" 
+			: (djLocale != "fr") 
+				? location.pathname.substring(location.pathname.lastIndexOf("/") + 1) 
+				: location.pathname.substring(1);
+	// console.log("curentPage = ", currentPage);
 	// if we are on the homepage without locale defined,
 	// we redirect to the right homepage
-	if(pageLocale != djLocale && djLocale != "fr"){
+	if(null == sessionLocale && pageLocale != djLocale && djLocale != "fr"){
 		window.location.href = "/en/" + currentPage;
 	}else{
 
