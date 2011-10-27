@@ -531,3 +531,7 @@ span.tagHeader img{
 #all{
     font-weight: bold;
 }
+
+a.partnerLink{
+    margin: 5px;
+}

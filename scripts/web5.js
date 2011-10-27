@@ -32,8 +32,6 @@ dojo.ready(function(){
 
 		// depending on the page we are on, we might want need to display a form or not
 		switch(currentPage){
-			case "about":
-				break;
 			case "":
         		var viewport = dojo.window.getBox(dojo.doc),
         	    anim8target = dojo.byId("logo");
@@ -55,6 +53,7 @@ dojo.ready(function(){
         		}).play();
                 break;        		
 			case "speakers":
+			case "about":
 			default:
 		}
 		
