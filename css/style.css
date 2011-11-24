@@ -208,6 +208,7 @@ div.contenu {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
+
 div.border {
   position: absolute;
   top: 133px;
@@ -266,8 +267,18 @@ div.gauche em {
   font-style: normal;
 }
 div.gauche p {
+  line-height: 1.4em;
   text-align: justify;
 }
+
+div.gauche.speakers{
+    width: 650px;
+}
+
+div.speaker{
+    width:100%;
+}
+
 div.droite {
   float: right;
   background-color: #ebf3f6;
@@ -285,10 +296,10 @@ div.droite h2 {
   color: #158bbb;
   font-size: 25px;
   font-weight: normal;
-  margin: 0;
-  padding: 16px 0;
+/*  margin: 0;*/
+  padding: 6px 0;
   border-bottom: 1px solid #D3D3D3;
-  margin-bottom: 30px;
+/*  margin-bottom: 30px;*/
 }
 div.droite p {
   line-height: 22px;
@@ -299,6 +310,24 @@ div.droite strong {
 div.droite a {
   font-size: 20px;
 }
+
+div.droite.partners {
+  float: right;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-top: 0px;
+  width: 160px;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  color: #565656;
+  border: 2px solid #CBD3D6;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: 50px;
+}
+
 a img {
   border: none;
 }
@@ -358,7 +387,7 @@ div.hofMember{
     margin-top: 25px;
     overflow: hidden;
 	background-color: #EBF3F6;
-	width: 580px;
+	width: 650px;
 }
 img.hofAvatar{
     padding: 3px;
@@ -370,7 +399,7 @@ img.hofAvatar{
     margin: 0px;
 }
 div.hofBio{
-  width: 406px;
+  width: 484px;
   margin:5px;
   float: left;
 }
@@ -386,7 +415,7 @@ div.hofBio span.tags img{
 }
 
 div.hofTopic{
-  width: 584px;
+    width: 654px;
     padding: 5px 5px 5px 0px
     margin: 0px;
     margin-top: -3px;
@@ -437,16 +466,10 @@ blockquote cite{
   left:37px;
 }
 
-body.home ul.nav li:first-child a {
+body.home ul.nav li:first-child a, body.speakers ul.nav li:nth-child(3) a, body.about ul.nav li:nth-child(2) a{
   color: #ff5b02;
 }
-body.home ul.nav li:first-child {
-  background-position: 0px 2px;
-}
-body.speakers ul.nav li:nth-child(3) a {
-  color: #ff5b02;
-}
-body.speakers ul.nav li:nth-child(3) {
+body.home ul.nav li:first-child, body.speakers ul.nav li:nth-child(3), body.about ul.nav li:nth-child(2) {
   background-position: 0px 2px;
 }
 
@@ -485,30 +508,32 @@ div.partners img{
     display: inline-block;
 }
 
-div.mouetteRight{
-    width: 70px;
-    height: 70px;
-    background-image:  url(../images/mouetteRight.gif);
-    cursor: crosshair;
-    position: absolute;
-    z-index: 9999;
+div.droite.partners span.partnersTitle{
+  border: 2px solid #c9d6dc;
+  background-color: #FFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  /*
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-right-radius: 2px;
+  */
+  border-bottom: none;
+  float: left;
+  margin-top: -28px;
+  margin-left: -22px;
+  padding: 5px;
+  font-weight: bold;
+  z-index: 666;
 }
 
-div.mouetteLeft{
-    width: 70px;
-    height: 70px;
-    background-image:  url(../images/mouetteLeft.gif);
-    cursor: crosshair;
-    position: absolute;
-    z-index: 9999;
-}
-
-div.boum{
-    width: 32px;
-    height: 32px;
-    background-image:  url(../images/boum.gif);
-    position: absolute;
-    z-index: 9999;
+div.droite.partners img{
+    padding: 3px;
+    display: block;
 }
 
 a.speakerAnchor{
@@ -534,4 +559,22 @@ span.tagHeader img{
 
 a.partnerLink{
     margin: 5px;
+}
+
+div.leftJs{
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+	width:100%;
+}
+
+img.leftJs{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+}
+
+img.yourLogoHere{
+    border: 2px dashed #c9d6dc;
 }

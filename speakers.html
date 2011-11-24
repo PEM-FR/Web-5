@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr-FR">
   <head>
-    <title>Web-5 : Nos prestigieux invités</title>
+    <title>Conférence Web-5 : Présentation des speakers de la Conférence Web 5 de Béziers en Avril 2012</title>
 	<meta name="Author" content="Web-5 Association"/>
-	<meta name="Description" content="Web-5 Conférence : liste des orateurs invités. Des experts reconnus dans leurs spécialités."/>
+	<meta name="Description" content="Venez découvrir les orateurs et conférenciers de la conférence Web-5 à Béziers les 4, 5 et 6 Avril 2012 à Béziers :  Robert Nyman, Michal Budzynski, Dylan Schiemann, Morten Nielsen, Peter Svensson, Jérôme Etienne, Jakub Siemiątkowski ..."/>
 	<meta name="Keywords" content="web-5, conference, javascript, dojo toolkit, webgl, html5, css3, open web, game, web application, france, beziers, experts"/>
 	<meta name="Generator" content="Human"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="icon" type="image/png" href="../images/favicon.png" />
+	<meta name="geo.region" content="FR-34" />
+	<meta name="geo.placename" content="Béziers" />
+	<meta name="geo.position" content="43.3434857;3.2113838" />
+	<meta name="ICBM" content="43.3434857, 3.2113838" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
     <!--[if IE 7]>
       <link rel="stylesheet" type="text/css" href="css/ie7.css" />
     <![endif]-->
@@ -18,11 +23,20 @@
     <!--[if IE 9]>
       <link rel="stylesheet" type="text/css" href="css/ie9.css" />
     <![endif]-->
-    <script src="http://yandex.st/dojo/1.6.1/dojo/dojo.xd.js"
-            type="text/javascript">
-    </script>
+    <script src="scripts/dojo.js" type="text/javascript"></script>
     <script src="scripts/web5.js" type="text/javascript"></script>
     <script src="scripts/sorter.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-26108024-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
   </head>
   <body class="speakers">
     <!--[if lte IE 6]>
@@ -34,8 +48,8 @@
     <div class="general">
       <ul class="nav">
         <li><a href="/" title="Accueil">Accueil</a></li>
-        <li><a href="#" title="Les organisateurs">Les Organisateurs</a></li>
-        <li><a href="#" title="Les invités">Les Invités</a></li>
+        <li><a href="about.html" title="Les organisateurs">Les Organisateurs</a></li>
+        <li><a href="speakers.html" title="Les invités">Les Invités</a></li>
         <li><a href="#" title="Le programme">Le programme</a></li>
         <li><a href="#" title="Le lieu de rendez-vous">Où sommes-nous ?</a></li>
       </ul>
@@ -50,7 +64,7 @@
           1ère ÉDITION : Avril 2012 à Béziers(34) - France
         </p>
       </div>
-      <a href="#" onclick="sessionStorage.setItem('locale', 'en'); window.location.href='en/speakers.html';">
+      <a href="en/speakers.html" onclick="sessionStorage.setItem('locale', 'en'); window.location.href='en/speakers.html';return false;">
 	      <img class="drapeau" src="images/en.png" alt="english version" title="english version"/>
 	  </a>
       <div class="border">
@@ -59,18 +73,24 @@
       <div class="calque grappe"><div></div></div>
       <div id="soleil" class="calque soleil"><div></div></div>
       <div class="contenu">
-        <div class="gauche">
-          <h1>Web-5 : les <span class="highlight">Orateurs 2012</span></h1>
+        <div class="gauche speakers">
+          <h1>Web-5 Conférence : les <span class="highlight">Orateurs 2012</span></h1>
           <p>
             Voici une liste non exhaustive des personnes qui partageront avec nous leurs connaissances
             et expériences. Cette liste sera complétée au fur et à mesure que les participants auront été
-            sélectionnés.<br /><br />
-            Trier : <span class="tagHeader" id="all">Tous</span>
+            sélectionnés.
+		  </p>
+  		  <div class="leftJs">
+		    <img class="leftJs" src="images/JavaScript_logo.png" title="JavaScript Logo by @tsatse" alt="JavaScript Logo by @tsatse"/>
+			<p>Nous avons représenté JavaScript avec cette icône designée par @tsa_tse que nous trouvons très réussie !<br/><br/></p>
+		  </div>
+		  <p>
+		    Trier : <span class="tagHeader" id="all">Tous</span>
             <span class="tagHeader" id="html5"><img src="images/html5.png" alt="HTML 5" title="HTML 5"/></span><span class="tagHeader" id="dojo"><img src="images/dojo.png" alt="Dojo Toolkit" title="Dojo Toolkit"/></span>
-            <span class="tagHeader" id="mobile"><img src="images/devices.png" alt="Mobile" title="Mobile"/></span><span class="tagHeader" id="javascript"><img src="images/js.png" alt="JavaScript" title="JavaScript"/></span>
+            <span class="tagHeader" id="mobile"><img src="images/devices.png" alt="Mobile" title="Mobile"/></span><span class="tagHeader" id="javascript"><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/></span>
             <span class="tagHeader" id="perfs"><img src="images/perfs.png" alt="Performances" title="Performances"/></span><span class="tagHeader" id="webgl"><img src="images/WebGL.png" alt="WebGL" title="WebGL"/></span>
           </p>
-          <div data-tag-list="html5">
+          <div class="speaker" data-tag-list="html5">
               <div class="hofMember" id="RobertNyman">
                 <img class="hofAvatar" src="images/avatars/robertnyman.jpg"
                      alt="Robert Nyman" title="Robert Nyman"/>
@@ -93,7 +113,7 @@
     			</p></blockquote>
     		  </div>
           </div>
-          <div data-tag-list="html5">
+          <div class="speaker" data-tag-list="html5">
             <div class="hofMember" id="MichalBudzynski">
                 <img class="hofAvatar" src="images/avatars/michal-budzynski.jpg"
                      alt="Michal Budzynski" title="Michal Budzynski"/>
@@ -119,7 +139,7 @@
             	</p></blockquote>
             </div>
           </div>
-          <div data-tag-list="dojo">
+          <div class="speaker" data-tag-list="dojo">
             <div class="hofMember" id="DylanSchiemann">
                 <img class="hofAvatar" src="images/avatars/dylanschiemann.jpeg" alt="Dylan Schiemann" title="Dylan Schiemann"/>
                 <div class="hofBio">
@@ -143,7 +163,7 @@
             	</p></blockquote>
             </div>
           </div>
-          <div data-tag-list="html5 mobile">
+          <div class="speaker" data-tag-list="html5 mobile">
             <div class="hofMember" id="MortenNielsen">
                 <img class="hofAvatar" src="images/avatars/mortennielsen.png" alt="Morten Nielsen" title="Morten Nielsen"/>
                 <div class="hofBio">
@@ -169,7 +189,7 @@
             	</p></blockquote>
             </div>
           </div>
-          <div data-tag-list="html5 dojo">
+          <div class="speaker" data-tag-list="html5 dojo">
             <div class="hofMember" id="PeterSvensson">
                 <img class="hofAvatar" src="images/avatars/psvensson.png" alt="Peter Svensson" title="Peter Svensson"/>
                 <div class="hofBio">
@@ -193,7 +213,7 @@
                 	</p></blockquote>
             </div>
           </div>
-          <div data-tag-list="webgl">
+          <div class="speaker" data-tag-list="webgl">
             <div class="hofMember" id="JeromeEtienne">
                 <img class="hofAvatar" src="images/avatars/jetienne.jpg" alt="Jérôme Etienne" title="Jérôme Etienne"/>
                 <div class="hofBio">
@@ -215,7 +235,7 @@
                 	</p></blockquote>
             </div>
           </div>
-          <div data-tag-list="webgl">
+          <div class="speaker" data-tag-list="webgl">
             <div class="hofMember" id="JakubSiemiatkowski">
                 <img class="hofAvatar" src="images/avatars/jakub_siemiatkowski.jpg" alt="Jakub Siemiątkowski" title="Jakub Siemiątkowski"/>
                 <div class="hofBio">
@@ -239,7 +259,7 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="dojo">
+          <div class="speaker" data-tag-list="dojo">
             <div class="hofMember" id="SamFoster">
                 <img class="hofAvatar" src="images/avatars/sfoster.png" alt="Sam Foster" title="Sam Foster"/>
                 <div class="hofBio">
@@ -260,11 +280,11 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="javascript">
+          <div class="speaker" data-tag-list="javascript">
             <div class="hofMember" id="ArnoutKazemier">
                 <img class="hofAvatar" src="images/avatars/3rdEden.png" alt="Arnout Kazemier" title="Arnout Kazemier"/>
                 <div class="hofBio">
-                    <span class="tags"><img src="images/js.png" alt="JavaScript" title="JavaScript"/></span>
+                    <span class="tags"><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/></span>
                 	<p class="noStyle">
                     <a class="speakerAnchor" href="#ArnoutKazemier">Arnout Kazemier</a><br/><br/>
                     Arnout is one of Socket.IO core developers and winner of the Node Knockout 2011 contest.<br />
@@ -283,7 +303,7 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="dojo mobile">
+          <div class="speaker" data-tag-list="dojo mobile">
             <div class="hofMember" id="ChristopheJolif">
                 <img class="hofAvatar" src="images/avatars/cjolif.png" alt="Christophe Jolif" title="Christophe Jolif"/>
                 <div class="hofBio">
@@ -307,7 +327,7 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="webgl">
+          <div class="speaker" data-tag-list="webgl">
             <div class="hofMember" id="KamilTrebunia">
                 <img class="hofAvatar" src="images/avatars/avatar_2.png" alt="Kamil Trebunia" title="Kamil Trebunia"/>
                 <div class="hofBio">
@@ -333,11 +353,11 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="javascript">
+          <div class="speaker" data-tag-list="javascript">
             <div class="hofMember" id="MaciejMalecki">
                 <img class="hofAvatar" src="images/avatars/maciejmalecki.jpg" alt="Maciej Małecki" title="Maciej Małecki"/>
                 <div class="hofBio">
-                    <span class="tags"><img src="images/js.png" alt="JavaScript" title="JavaScript"/></span>
+                    <span class="tags"><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/></span>
                 	<p class="noStyle">
                     <a class="speakerAnchor" href="#MaciejMalecki">Maciej Małecki</a><br/><br/>
                 	Maciej is an engineer at nodejitsu. He came a long way from PHP, through Python, ending up being a server- and client-side JavaScript developer.<br/>
@@ -357,11 +377,11 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="javascript">
+          <div class="speaker" data-tag-list="javascript">
             <div class="hofMember" id="JohannesFahrenkrug">
                 <img class="hofAvatar" src="images/avatars/johannesfahrenkrug.jpg" alt="Johannes Fahrenkrug" title="Johannes Fahrenkrug"/>
                 <div class="hofBio">
-                    <span class="tags"><img src="images/js.png" alt="JavaScript" title="JavaScript"/></span>
+                    <span class="tags"><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/></span>
                 	<p class="noStyle">
                     <a class="speakerAnchor" href="#JohannesFahrenkrug">Johannes Fahrenkrug</a><br/><br/>
                 	Johannes is the one man software development army, a freelance JavaScript and iOS developer from Germany.<br/>
@@ -380,11 +400,11 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="javascript perfs">
+          <div class="speaker" data-tag-list="javascript perfs">
             <div class="hofMember" id="PhilipTellis">
                 <img class="hofAvatar" src="images/avatars/philiptellis.jpg" alt="Philip Tellis" title="Philip Tellis"/>
                 <div class="hofBio">
-                    <span class="tags"><img src="images/js.png" alt="JavaScript" title="JavaScript"/><img src="images/perfs.png" alt="Performances" title="Performances"/></span>
+                    <span class="tags"><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/><img src="images/perfs.png" alt="Performances" title="Performances"/></span>
                 	<p class="noStyle">
                     <a class="speakerAnchor" href="#PhilipTellis">Philip Tellis</a><br/><br/>
                     Philip Tellis is a geek who likes to make the computer do his work for him. As co-founder and CTO of Log-Normal, Inc, he analyses the impact of various design decisions on web application performance, scalability and security.<br/>
@@ -404,7 +424,7 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="html5 mobile">
+          <div class="speaker" data-tag-list="html5 mobile">
             <div class="hofMember" id="PaulPanserrieu">
                 <img class="hofAvatar" src="images/avatars/paulpanserrieu.png" alt="Paul Panserrieu" title="Paul Panserrieu"/>
                 <div class="hofBio">
@@ -425,7 +445,7 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="html5 dojo webgl mobile">
+          <div class="speaker" data-tag-list="html5 dojo webgl mobile">
             <div class="hofMember" id="PatrickRuzand">
                 <img class="hofAvatar" src="images/avatars/patrickruzand.jpg" alt="Patrick Ruzand" title="Patrick Ruzand"/>
                 <div class="hofBio">
@@ -450,11 +470,11 @@
 				</p></blockquote>
 			</div>
           </div>
-          <div data-tag-list="html5 javascript perfs">
+          <div class="speaker" data-tag-list="html5 javascript perfs">
             <div class="hofMember" id="PierreSpring">
                 <img class="hofAvatar" src="images/avatars/pierrespring.jpg" alt="Pierre Spring" title="Pierre Spring"/>
                 <div class="hofBio">
-                    <span class="tags"><img src="images/html5.png" alt="HTML 5" title="HTML 5"/><img src="images/js.png" alt="JavaScript" title="JavaScript"/><img src="images/perfs.png" alt="Performances" title="Performances"/></span>
+                    <span class="tags"><img src="images/html5.png" alt="HTML 5" title="HTML 5"/><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/><img src="images/perfs.png" alt="Performances" title="Performances"/></span>
                 	<p class="noStyle">
                     <a class="speakerAnchor" href="#PierreSpring">Pierre Spring</a><br/><br/>
                     Pierre is an entrepreneur by day and a web developer by night. Or the other way around. He loves to write clean and maintainable code, come up with crazy ideas for his clients and learn new things. He just recently quit his day job to start a company with a friend, writing some of the finest web applications for his clients!<br />
@@ -472,13 +492,63 @@
 				<span class="topic">Frontend Performance Optimization</span><br/><br/>
 				Backends are getting faster by the day. But the speed at which we deliver HTML has little influence to the actual speed at which a page is displayed. In this session we will look at some of the most important frontend performance optimization steps you have to take in order to have blazing fast pages.<br/>
                 We will also elaborate on the importance of getting the maximum speed out of your pages, like the fact that Google uses site speed in web search ranking.<br/><br/>
-					<cite>by <strong>Patrick Ruzand</strong></cite>
+					<cite>by <strong>Pierre Spring</strong></cite>
 				</p></blockquote>
 			</div>
           </div>
-        </div><div class="droite">
-          <h2>Rejoignez-nous !</h2>
-          <p>Merci à tous les speakers nous ayant contactés ! Nous sommes désormais complets :)</p>
+          <div class="speaker" data-tag-list="html5 javascript perfs">
+            <div class="hofMember" id="AndrewJBaker">
+                <img class="hofAvatar" src="images/avatars/andrewbaker.png" alt="Andrew J. Baker" title="Andrew J. Baker"/>
+                <div class="hofBio">
+                    <span class="tags"><img src="images/html5.png" alt="HTML 5" title="HTML 5"/><img src="images/javascript.png" alt="JavaScript" title="JavaScript"/><img src="images/perfs.png" alt="Performances" title="Performances"/></span>
+                	<p class="noStyle">
+                    <a class="speakerAnchor" href="#AndrewJBaker">Andrew J. Baker</a><br/><br/>
+                    Andrew is passionate about all-things HTML5 and browser-based games. He spoke about Steppe, his HTML5 canvas 2.5D landscape renderer, at the first HTML5 games conference in 2011 and has sat on Mozilla's panel of experts for their AskMDN Twitter sessions.<br/>
+                    He is an active member of the #bbg IRC channel on Freenode; a channel specifically devoted to browser-based games development. He lives in Robin Hood's county with his family and is currently employed by Ibuildings UK where he focuses on both client- and server-side Web development in equal measure.<br/>
+                    Oh, and he is also working on an ambitious HTML5 game called Fleeting Fantasy.
+                    </p>
+                </div>
+            </div>
+			<div class="hofTopic">
+		    <span class="arrow_border"></span>
+			<span class="arrow_inner"></span>
+				<blockquote><p>
+				<span class="topic">Holistic Web app design and development with HTML5</span><br/><br/>
+                Covering not only client-side requirements, but oft forgotten server-side issues related to interprocess communication, Web Sockets, SSEs, authentication, scaling, portability, etc. 
+                Largely a bunch of tips and tricks for using HTML5 client-side alongside conventional server-side platforms like LAMP and Node.js.
+					<cite>by <strong>Andrew J. Baker</strong></cite>
+				</p></blockquote>
+			</div>
+          </div>
+          <div class="speaker" data-tag-list="dojo">
+            <div class="hofMember" id="ChrisBarrett">
+                <img class="hofAvatar" src="images/avatars/chrisbarrett.jpg" alt="Chris Barrett" title="Chris Barrett"/>
+                <div class="hofBio">
+                    <span class="tags"><img src="images/dojo.png" alt="Dojo Toolkit" title="Dojo Toolkit"/></span>
+                	<p class="noStyle">
+                    <a class="speakerAnchor" href="#ChrisBarrett">Chris Barrett</a><br/><br/>
+                    Chris spent the early years of his career with server-side code of all flavors, but while working in academia discovered the Dojo Toolkit and hasn't looked back since.<br/>
+                    Now he works at SitePen and gets to play with Dojo all day long on client projects, on contributions to the Dojo Foundation, and improving documentation to make Dojo easier to use for everyone. You can often find him on #dojo as cbarrett1 and on twitter as @thegoldentoilet.
+                    </p>
+                </div>
+            </div>
+			<div class="hofTopic">
+		    <span class="arrow_border"></span>
+			<span class="arrow_inner"></span>
+				<blockquote><p>
+				<span class="topic">Changing the game with dgrid</span><br/><br/>
+                In this session I will talk about dgrid, the new open source project living in the Dojo Foundation.<br/>
+                We will cover why we  decided to write it, why you should use it, how it works, and how to work with it. We will cover performance gains, how it is easier to work with than other grids that shall not be named, use-cases, its plug-ins and more in this talk about the best grid to hit Dojo yet.
+					<cite>by <strong>Chris Barrett</strong></cite>
+				</p></blockquote>
+			</div>
+          </div>
+        </div><div class="droite partners">
+			<span class="partnersTitle">Nos partenaires</span>
+			<a class="partnerLink" href="http://www.powerboutique.com/" title="Do|You|Soft" target="_blank" rel="external contact colleague"><img src="images/partners/doyousoft.png" alt="Do|You|Soft"/></a>
+			<a class="partnerLink" href="http://www.iutbeziers.univ-montp2.fr/" title="IUT de Béziers" target="_blank" rel="external contact colleague"><img src="images/partners/iutbeziers.jpg" alt="IUT de Béziers"/></a>
+			<a class="partnerLink" href="http://www.ibm.com/fr/fr/" title="IBM" target="_blank" rel="external contact colleague"><img src="images/partners/ibm_150.jpg" alt="IBM"/></a>
+			<a class="partnerLink" href="partners.html" title="Votre Logo ici"><img src="images/votrelogoici.png" alt="Votre Logo ici" class="yourLogoHere"/></a>
         </div>
       </div>
     </div>

@@ -51,8 +51,9 @@ dojo.ready(function(){
                       anim8target.style.display = "block";
                     }
         		}).play();
-                break;        		
+                break;
 			case "speakers":
+			case "partners":
 			case "about":
 			default:
 		}
