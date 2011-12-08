@@ -11,9 +11,6 @@ dojo.ready(function(){
         filteredNodes = []
     ;
     
-    
-    
-    
     dojo.query(".tagHeader").forEach(function(tagHeader){
         var idTagHeader = dojo.attr(tagHeader, "id");
         if(idTagHeader != "all"){
