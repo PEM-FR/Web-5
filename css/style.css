@@ -470,10 +470,10 @@ blockquote cite{
   left:37px;
 }
 
-body.home ul.nav li:first-child a, body.speakers ul.nav li:nth-child(3) a, body.about ul.nav li:nth-child(2) a{
+body.home ul.nav li:first-child a, body.speakers ul.nav li:nth-child(3) a, body.about ul.nav li:nth-child(2) a, body.venue ul.nav li:nth-child(5) a{
   color: #ff5b02;
 }
-body.home ul.nav li:first-child, body.speakers ul.nav li:nth-child(3), body.about ul.nav li:nth-child(2) {
+body.home ul.nav li:first-child, body.speakers ul.nav li:nth-child(3), body.about ul.nav li:nth-child(2), body.venue ul.nav li:nth-child(5){
   background-position: 0px 2px;
 }
 
