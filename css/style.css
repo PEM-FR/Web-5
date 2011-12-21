@@ -503,7 +503,6 @@ div.partners span.partnersTitle{
   margin-top: -46px;
   left: -15px;
   padding: 5px;
-  font-weight: bold;
   z-index: 666;
 }
 
@@ -527,8 +526,14 @@ div.droite.partners span.partnersTitle{
   margin-top: -28px;
   margin-left: -22px;
   padding: 5px;
-  font-weight: bold;
   z-index: 666;
+}
+
+span.partnersTitle a.partnersTitle{
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 div.droite.partners img{
