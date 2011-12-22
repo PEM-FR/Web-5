@@ -441,7 +441,7 @@ span.topic{
 	font-style: normal;
 	font-weight: bold;
 }
-blockquote cite{
+cite{
     display: block;
     text-align: right;
     font-style: normal;
