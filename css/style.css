@@ -652,3 +652,15 @@ h2.partners {
     font-family: 'BookmanITCLtBTDemiItalic';
     font-size: 1.4em;
 }
+
+div.addthis_toolbox.addthis_default_style.addthis_32x32_style{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: right;
+}
+
+div.addthis_toolbox.addthis_default_style.topPosition{
+	margin-top: 0px;
+	margin-bottom: 25px;
+	float: none;
+}
