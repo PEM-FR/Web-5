@@ -470,10 +470,10 @@ cite{
   left:37px;
 }
 
-body.home ul.nav li:first-child a, body.speakers ul.nav li:nth-child(3) a, body.about ul.nav li:nth-child(2) a, body.venue ul.nav li:nth-child(5) a{
+body.home ul.nav li:first-child a, body.speakers ul.nav li:nth-child(3) a, body.about ul.nav li:nth-child(2) a, body.schedule ul.nav li:nth-child(4) a, body.venue ul.nav li:nth-child(5) a{
   color: #ff5b02;
 }
-body.home ul.nav li:first-child, body.speakers ul.nav li:nth-child(3), body.about ul.nav li:nth-child(2), body.venue ul.nav li:nth-child(5){
+body.home ul.nav li:first-child, body.speakers ul.nav li:nth-child(3), body.about ul.nav li:nth-child(2), body.schedule ul.nav li:nth-child(4), body.venue ul.nav li:nth-child(5){
   background-position: 0px 2px;
 }
 
@@ -663,4 +663,9 @@ div.addthis_toolbox.addthis_default_style.topPosition{
 	margin-top: 0px;
 	margin-bottom: 25px;
 	float: none;
+}
+
+div.droite a.droiteLink{
+	font-size: 16px;
+	font-weight: bold;
 }
