@@ -41,6 +41,130 @@ dojo.ready(function(){
                       anim8target.style.display = "block";
                     }
         		}).play();
+                // let's load a few speakers randomly from the list
+                var speakerList = [{
+                        name: "Robert Nyman",
+                        theme: "Html5",
+                        topic: "Open Web and what it means",
+                        link: "RobertNyman",
+                        image: "robertnyman.jpg"
+                    }, {
+                        name: "Michal Budzynski",
+                        theme: "Html5",
+                        topic: "Can we now replace Falsh ?",
+                        link: "MichalBudzynski",
+                        image: "michal-budzynski.jpg"
+                    }, {
+                        name: "Dylan Schiemann",
+                        theme: "Dojo, Mobile",
+                        topic: "Modular, Mobile, and Reinventing Web App Development",
+                        link: "DylanSchiemann",
+                        image: "dylanschiemann.jpeg"
+                    }, {
+                        name: "Morten Nielsen",
+                        theme: "Html5, Mobile",
+                        topic: "Mobile offline capabilities thanks to HTML5 and JavaScript",
+                        link: "MortenNielsen",
+                        image: "mortennielsen.png"
+                    }, {
+                        name: "Peter Svensson",
+                        theme: "Dojo, Html5",
+                        topic: "How to build large web applications in client-side JavaScript",
+                        link: "PeterSvensson",
+                        image: "psvensson.png"
+                    }, {
+                        name: "Jerome Etienne",
+                        theme: "WebGL",
+                        topic: "How to make games with WebGL !",
+                        link: "JeromeEtienne",
+                        image: "jetienne.jpg"
+                    }, {
+                        name: "Jakub Siemiatkowski",
+                        theme: "WebGL",
+                        topic: "Why WebGL is the future and why this doesn't suck?",
+                        link: "JakubSiemiatkowski",
+                        image: "jakub_siemiatkowski.jpg"
+                    }, {
+                        name: "Sam Foster",
+                        theme: "Dojo",
+                        topic: "Lessons we can learn and carry with us from the Dojo Toolkit",
+                        link: "SamFoster",
+                        image: "sfoster.png"
+                    }, {
+                        name: "Arnout Kazemier",
+                        theme: "JavaScript",
+                        topic: "Pushing the web forward with Socket.IO",
+                        link: "ArnoutKazemier",
+                        image: "3rdEden.png"
+                    }, {
+                        name: "Christophe Jolif",
+                        theme: "Dojo, Mobile",
+                        topic: "Enabling the mobile Web for a Dojo component",
+                        link: "ChristopheJolif",
+                        image: "cjolif.png"
+                    }, {
+                        name: "Kamil Trebunia",
+                        theme: "WebGL",
+                        topic: "General patterns to deal with complex applications",
+                        link: "KamilTrebunia",
+                        image: "avatar_2.png"
+                    }, {
+                        name: "Maciej Malecki",
+                        theme: "JavaScript",
+                        topic: "How about moving your templates to the client-side?",
+                        link: "MaciejMalecki",
+                        image: "maciejmalecki.jpg"
+                    }, {
+                        name: "Philip Tellis",
+                        theme: "JavaScript, Performance",
+                        topic: "Messing with JavaScript and the DOM to measure various Network Characteristics",
+                        link: "PhilipTellis",
+                        image: "philiptellis.jpg"
+                    }, {
+                        name: "Paul Panserrieu",
+                        theme: "Html5, Mobile",
+                        topic: "How can we build a dead simple multitouch mobile app based on web standards?",
+                        link: "PaulPanserrieu",
+                        image: "paulpanserrieu.png"
+                    }, {
+                        name: "Patrick Ruzand",
+                        theme: "Html5, Dojo, WebGL, Mobile",
+                        topic: "dojox.gfx, the fundation for your cross-browser visualization needs",
+                        link: "PatrickRuzand",
+                        image: "patrickruzand.jpg"
+                    }, {
+                        name: "Pierre Spring",
+                        theme: "Html5, JavaScript, Performance",
+                        topic: "Frontend Performance Optimization",
+                        link: "PierreSpring",
+                        image: "pierrespring.jpg"
+                    }, {
+                        name: "Andrew J Baker",
+                        theme: "Html5, JavaScript, Performance",
+                        topic: "Holistic Web app design and development with HTML5",
+                        link: "AndrewJBaker",
+                        image: "andrewbaker.png"
+                    }, {
+                        name: "Chris Barrett",
+                        theme: "Dojo",
+                        topic: "Changing the game with dgrid and eventd",
+                        link: "ChrisBarrett",
+                        image: "chrisbarrett.jpg"
+                    }];
+                    // then we choose at random 9 speakers ?
+                    shuffle = function(v){
+                        for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+                        return v;
+                    };
+                    speakerList = shuffle(speakerList);
+                    var thumbnail = dojo.byId('speakersThumbnail');
+                    for(var i = 0; i < speakerList.length; i++){
+                        var divContent = "<a href=\"" + location.pathname + "speakers.html#" + speakerList[i].link + "\" title=\"" 
+                            + speakerList[i].name + " (" + speakerList[i].theme + ") : " + speakerList[i].topic + "\">" 
+                            + "<br/><img src=\"" + (pageLocale == "en" ? "../" : "") + "images/avatars/small/" + speakerList[i].image + "\" alt=\"" + speakerList[i].topic + "\"/></a>",
+                            divSpeaker = dojo.create("div", {innerHTML: divContent, "class" : "speakersThumbnail"});
+                        thumbnail.appendChild(divSpeaker);
+                    }
                 break;
 			case "speakers":
 			case "partners":

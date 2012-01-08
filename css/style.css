@@ -159,6 +159,9 @@ p.conference {
   margin: 10px 0;
   text-shadow: 1px 1px 1px #0b6d92;
 }
+p.conference strong{
+  color: #CaFFFF;
+}
 div.ascenseur {
   position: absolute;
   z-index: -2;
@@ -668,4 +671,20 @@ div.addthis_toolbox.addthis_default_style.topPosition{
 div.droite a.droiteLink{
 	font-size: 16px;
 	font-weight: bold;
+}
+
+div.speakersThumbnail{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-image: url(../images/postit.png);
+    float: left;
+    margin: 5px;
+    font-size: 9px;
+}
+
+div#speakersThumbnail{
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
