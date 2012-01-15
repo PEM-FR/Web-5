@@ -758,3 +758,64 @@ div.detail {
   border-top: 1px dashed #ccc;
   height: 89px;
 }
+
+/****************************************** DIAPORAMA *****************************************************/
+
+#diaporamaNode {
+  width: 580px;
+  overflow: hidden;
+}
+
+.diaporama {
+    position: relative;
+    width: 10000px;
+}
+
+.diaporama .slide {
+    float: left;
+    position: relative;
+    width: 580px;
+    height: 260px;
+}
+
+.diaporama .commentaire{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: 200px;
+    background:url(../images/blank.png);
+}
+
+.diaporama .commentaire p {
+    padding: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.diaporamaBoutons {
+    bottom: 30px;
+    left: 490px;
+    position: relative;    
+}
+
+.diaporamaBoutons .bouton{
+    background: #78932C;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 3px;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+
+.diaporamaBoutons .bouton:hover{
+    background: #B4E825;
+    border: 1px solid #000;
+}
+
+.diaporamaBoutons .current{
+    background: #B4E825;
+    border: 1px solid #000;
+}
+

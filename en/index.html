@@ -22,7 +22,7 @@
     <!--[if IE 9]>
       <link rel="stylesheet" type="text/css" href="../css/ie9.css" />
     <![endif]-->
-    <script src="../scripts/dojo.js" type="text/javascript"></script>
+    <script src="../scripts/dojo/dojo.js" type="text/javascript"></script>
     <script src="../scripts/web5.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -81,6 +81,26 @@
 			<a class="addthis_button_compact"></a>
 			<a class="addthis_counter addthis_bubble_style"></a>
 		  </div>
+
+      <script>
+          dojo.require("Diaporama");
+            
+            dojo.addOnLoad(function(){
+              var images = [];
+              images.push("/images/slides/slide1-en.png");
+              images.push("/images/slides/slide2.png");
+              images.push("/images/slides/slide3-en.png");
+              images.push("/images/slides/slide4-en.png");
+                                    
+                var diaporama = new Diaporama({
+                  images: images,
+                  node: "diaporamaNode"
+                });
+            });
+
+        </script>
+        <div id="diaporamaNode"></div>
+              
           <p>
 		    Come and be amazed by our marvellous speakers ! They are awesome, they are famous, they roxx, and you've probably always dreamt on meeting one of them ! It is now possible ! You might even end up drinking a beer at the same table kidding at how badass it is to push on prod a friday evening :)<br/>
 			Take this unique chance to see the real thing live, and learn a lot attending their talks !<br/><br/>
