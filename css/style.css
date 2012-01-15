@@ -692,35 +692,44 @@ div#speakersThumbnail{
 div.blocDaySchedule {
   float: left;
   width: 140px;
-  background: #ccc;
+  background: #ebf3f6;
   -webkit-border-radius: 12px 0px 12px 0px;
   -moz-border-radius: 12px 0px 12px 0px;
   border-radius: 12px 0px 12px 0px;
-  margin-bottom: 20px;
-  border: 1px solid #bcbcbc;
+  border: 1px solid #056a96;
 }
 
 div.blocDaySchedule .time {
   width: 140px;
-  border-top: 1px solid #bcbcbc;
+  border-top: 1px solid #056a96;
   font-family: 'Arial';
   font-size: 1.4em;
-  text-align: center;  
+  text-align: center;
   padding: 34px 0px;
+  height: 22px;
 }
 
 div.blocDaySchedule .lunch {
-  background: #00C044;
+  background: #ffa415;
+}
+
+div.blocDaySchedule .break {
+  background: #FFFF66;
 }
 
 div.blocDaySchedule .party {
-  background: #FF89EA;
+  background: #ffa415;
   -webkit-border-radius: 0px 0px 12px 0px;
   -moz-border-radius: 0px 0px 12px 0px;
-  border-radius: 0px 0px 12px 0px;  
+  border-radius: 0px 0px 12px 0px;
 }
 
-div.blocDaySchedule h2 {
+
+div.blocDaySchedule .day {
+    height: 28px;
+}
+
+div.blocDaySchedule .day h2 {
     font-family: 'Arial';
     font-size: 1em;
     text-align: center;
@@ -730,12 +739,8 @@ div.blocDaySchedule h2 {
 div.blocDayScheduleDetails {
   float: left;
   width: 438px;
-  height: 935px;
-  margin-top: 38px;
-}
-
-div.blocDayScheduleDetails:last-child {
-  height: 420px;
+/*  height: 935px;*/
+  margin-top: 40px;
 }
 
 div.blocDayScheduleDetails .avatar {
@@ -762,7 +767,7 @@ div.blocDayScheduleDetails div.description {
   text-align: justify;
   float: left;
   width: 358px;
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 12px;
 }
 
@@ -775,5 +780,13 @@ div.blocDayScheduleDetails div.duration {
 
 div.detail {
   border-top: 1px dashed #ccc;
-  height: 89px;
+  height: 90px;
+}
+
+div.separator {
+  float: left;
+  height: 15px;
+  width: 100%;
+  clear: both;
+  margin-bottom: 15px;
 }
