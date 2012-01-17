@@ -51,7 +51,7 @@ dojo.ready(function(){
                     }, {
                         name: "Michal Budzynski",
                         theme: "Html5",
-                        topic: "Can we now replace Falsh ?",
+                        topic: "Can we now replace Flash ?",
                         link: "MichalBudzynski",
                         image: "michal-budzynski.jpg"
                     }, {
