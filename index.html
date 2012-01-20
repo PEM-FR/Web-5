@@ -24,8 +24,16 @@
       <link rel="stylesheet" type="text/css" href="css/ie9.css" />
     <![endif]-->
 <!--    <script src="http://yandex.st/dojo/1.6.1/dojo/dojo.xd.js" type="text/javascript"></script> -->
+	<script type="text/javascript">
+        var dojoConfig = {
+            modulePaths : {
+                "widget" : "/"
+            }
+        }
+    </script>
     <script src="scripts/dojo.js" type="text/javascript"></script>
     <script src="scripts/web5.js" type="text/javascript"></script>
+	<script src="scripts/Diaporama.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-26108024-1']);
@@ -37,6 +45,19 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		var addthis_config = {"data_track_addressbar":true};
+
+        dojo.require("widget.Diaporama");
+        dojo.ready(function(){
+            var diaporama = new widget.Diaporama();
+            diaporama.images = [
+                "/images/slides/slide1.png",
+                "/images/slides/slide2.png",
+                "/images/slides/slide3.png",
+                "/images/slides/slide4.png"
+            ];
+            diaporama.node = "diaporamaNode";
+            diaporama.init();
+        });
 	</script>
 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef856c53d57d0e6"></script>
   </head>
@@ -114,8 +135,9 @@ W::::::W                           W::::::W                b:::::b              
 			<a class="addthis_button_compact"></a>
 			<a class="addthis_counter addthis_bubble_style"></a>
 		  </div>
+          <div id="diaporamaNode"></div>
           <div id="speakersThumbnail"></div>
-		  <p>
+		  <p><br />
 			La première conférence Web-5 aura lieu à Béziers, dans l'Hérault (34) les <strong>4, 5 et 6 Avril 2012</strong>.<br/>
 			Elle a pour objet de faire découvrir et partager de <strong>nouvelles
 			technologies</strong> et techniques javascript, html5, css3, webgl, grâce à une approche pratique et concrète.

@@ -1,10 +1,9 @@
 dojo.provide("widget.Diaporama");
 
-dojo.require("dijit._Widget");
 dojo.require("dojo.fx");
 dojo.require("dojo.fx.easing");
 
-dojo.declare("widget.Diaporama", dijit._Widget, {
+dojo.declare("widget.Diaporama", null, {
 
     indice: 0,
     width: 580,
@@ -14,10 +13,11 @@ dojo.declare("widget.Diaporama", dijit._Widget, {
     images: null,
     nbDiapo: 1,
     diaporama: null,
+    _connects: null,
 
-    buildRendering: function(){
-        this.inherited(arguments);
-        
+    init: function(){
+
+        this._connect = new Array();
         this.node = dojo.byId(this.node);
         this.diaporama = dojo.create("div",{"class": "diaporama"}, this.node);
         
@@ -39,15 +39,11 @@ dojo.declare("widget.Diaporama", dijit._Widget, {
             }, boutons);
             current = "";
             var numDiapo = this.nbDiapo;
-            this.connect(bouton, "onclick", dojo.hitch(this, function(){
+            this._connect.push(dojo.connect(bouton, "onclick", dojo.hitch(this, function(){
                 this.rewind(numDiapo - 1);
-            }));
+            })));
             this.nbDiapo++;
         }, this);
-    },
-    
-    postCreate: function(){
-        this.inherited(arguments);
 
         this.slideArgs = {
             node: this.diaporama,
@@ -61,7 +57,7 @@ dojo.declare("widget.Diaporama", dijit._Widget, {
                 }
                 this.timeout = setTimeout(dojo.hitch(this, function(){
                     this.startDiaporama();
-                }), 4000);
+                }), 3000);
             }),
             easing: dojo.fx.easing["backOut"]
         };
@@ -84,6 +80,10 @@ dojo.declare("widget.Diaporama", dijit._Widget, {
         this.indice = item;
         this.slide.stop();
         this.startDiaporama();
+    },
+    
+    destroy: function(){
+        dojo.forEach(this._connect, dojo.disconnect);
     }
 
 });
