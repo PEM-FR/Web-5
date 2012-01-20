@@ -1,12 +1,12 @@
 dojo.ready(function(){
     
     var tags = {
-        html5 : [],
-        webgl : [],
-        dojo  : [],
-        javascript : [],
-        perfs  : [],
-        mobile  : []
+            html5 : [],
+            webgl : [],
+            dojo  : [],
+            javascript : [],
+            perfs  : [],
+            mobile  : []
         },
         filteredNodes = []
     ;
@@ -18,6 +18,10 @@ dojo.ready(function(){
             tagHeader.innerHTML += " (" + tags[idTagHeader].length + ")";
         }
         dojo.connect(tagHeader, "onclick", dojo.hitch(this, function(){
+            dojo.query(".tagHeader").forEach(function(tagHeaderUnselected){
+                dojo.removeClass(tagHeaderUnselected, "selected");
+            }, this);
+            dojo.addClass(tagHeader, " selected");
             filteredNodes = [];
             if(idTagHeader == "all"){
                 for(tagType in tags){

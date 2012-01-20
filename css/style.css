@@ -175,8 +175,8 @@ div.ascenseur {
   background: -webkit-linear-gradient(top, #03202B 0%,#3D8BAD 100%);
   background: -o-linear-gradient(top, #03202B 0%,#3D8BAD 100%);
   background: -ms-linear-gradient(top, #03202B 0%,#3D8BAD 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03202B', endColorstr='#3D8BAD',GradientType=0 );
-  background: linear-gradient(top, #03202B 0%,#3D8BAD 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#03202B', endColorstr='#3D8BAD',GradientType=0);
+  background: linear-gradient(top, #03202B 0%, #3D8BAD 100%);
 }
 div.ascenseur.left {
   left: 42px;
@@ -375,7 +375,7 @@ div.calque.soleilJaune {
 }
 div.calque.soleilJaune > div {
   background: url(../images/soleilJaune.png);
-  transform-origin": 50% 50%;
+  transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%; 
   -o-transform-origin: 50% 50%; 
   -ms-transform-origin: 50% 50%; 
@@ -423,7 +423,7 @@ div.hofBio span.tags img{
 
 div.hofTopic{
     width: 654px;
-    padding: 5px 5px 5px 0px
+    padding: 5px 5px 5px 0px;
     margin: 0px;
     margin-top: -3px;
 }
@@ -440,9 +440,10 @@ blockquote {
     font-style: italic;
     text-align: justify;
 }
-span.topic{
+.topic{
 	font-style: normal;
 	font-weight: bold;
+    font-size: 1em;
 }
 cite{
     display: block;
@@ -556,6 +557,10 @@ a.speakerAnchor{
 span.tagHeader{
     margin-right: 15px;
     cursor: pointer;
+}
+span.tagHeader.selected{
+    padding-bottom: 3px;
+    border-bottom: 1px double #ff7415;
 }
 span.tagHeader img{
     vertical-align: middle;
@@ -789,4 +794,64 @@ div.separator {
   width: 100%;
   clear: both;
   margin-bottom: 15px;
+}
+
+/****************************************** DIAPORAMA *****************************************************/
+
+#diaporamaNode {
+    width: 580px;
+    overflow: hidden;
+}
+
+.diaporama {
+    position: relative;
+    width: 10000px;
+}
+
+.diaporama .slide {
+    float: left;
+    position: relative;
+    width: 580px;
+    height: 260px;
+}
+
+.diaporama .commentaire{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: 200px;
+    background:url(../images/blank.png);
+}
+
+.diaporama .commentaire p {
+    padding: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.diaporamaBoutons {
+    bottom: 30px;
+    left: 490px;
+    position: relative;    
+}
+
+.diaporamaBoutons .bouton{
+    background: #78932C;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 3px;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+
+.diaporamaBoutons .bouton:hover{
+    background: #B4E825;
+    border: 1px solid #000;
+}
+
+.diaporamaBoutons .current{
+    background: #B4E825;
+    border: 1px solid #000;
 }
