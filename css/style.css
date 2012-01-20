@@ -767,6 +767,10 @@ div.blocDayScheduleDetails div.titre {
   font-size: 20px;
 }
 
+div.blocDayScheduleDetails div.titre h2.noStyle{
+    font-size: 1em;
+}
+
 div.blocDayScheduleDetails div.description {
   margin-left: 12px;
   text-align: justify;
