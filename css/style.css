@@ -29,6 +29,42 @@ body {
   border-top: 5px solid #ff6408;
 }
 
+h3 {
+  margin-top: 0px;
+  font-family: 'BookmanITCLtBTDemiItalic';
+  font-size: 1.2em;
+}
+
+.iframeMap {
+  border: 1px solid #ccc;  
+  float: right;
+  width: 425px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  padding: 0px 3px;
+}
+
+div.adresse {
+  float: left;
+  width: 395px;
+  height: 385px;
+  background-color: #EBF3F6;
+  margin-right: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+div.adresse hr {
+  margin: 20px 0px;
+  border: 1px dashed #444;
+  padding: 0px;
+}
+
+div.agrandirCarte {
+  text-align: right;
+  font-weight: bold;
+}
+
 div.bg{
   margin: 0;
   padding: 0;
@@ -296,6 +332,7 @@ div.droite {
   font-size: 14px;
   text-align: center;
   color: #565656;
+  margin-bottom: 20px;
 }
 div.droite h2 {
   font-family: 'BookmanITCLtBTDemiItalic';

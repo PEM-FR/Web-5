@@ -57,7 +57,7 @@ dojo.declare("widget.Diaporama", null, {
                 }
                 this.timeout = setTimeout(dojo.hitch(this, function(){
                     this.startDiaporama();
-                }), 3000);
+                }), 4000);
             }),
             easing: dojo.fx.easing["backOut"]
         };
