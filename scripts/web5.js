@@ -73,6 +73,12 @@ dojo.ready(function(){
                         link: "PeterSvensson",
                         image: "psvensson.png"
                     }, {
+                        name: "Karolina Szczur",
+                        theme: "CSS4",
+                        topic: "The Future is Now!",
+                        link: "KarolinaSzczur",
+                        image: "karolina_szczur.png"
+                    }, {
                         name: "Jerome Etienne",
                         theme: "WebGL",
                         topic: "How to make games with WebGL !",
@@ -107,7 +113,7 @@ dojo.ready(function(){
                         theme: "WebGL",
                         topic: "General patterns to deal with complex applications",
                         link: "KamilTrebunia",
-                        image: "avatar_2.png"
+                        image: "kamil_trebunia.jpg"
                     }, {
                         name: "Maciej Malecki",
                         theme: "JavaScript",
