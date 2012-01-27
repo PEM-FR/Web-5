@@ -156,6 +156,12 @@ dojo.ready(function(){
                         topic: "Changing the game with dgrid and eventd",
                         link: "ChrisBarrett",
                         image: "chrisbarrett.jpg"
+                    }, {
+                        name: "Charlie Robbins",
+                        theme: "JavaScript, Performance",
+                        topic: "Scaling Isomorphic Javascript Applications",
+                        link: "CharlieRobbins",
+                        image: "charlierobbins.png"
                     }];
                     // then we choose at random 9 speakers ?
                     shuffle = function(v){
