@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: arial;
-  font-size: 13px;
+  font-size: 82%;
 /*  background: #056a96;
   background-repeat: no-repeat;*/
   background-color: #ecf1f4;
@@ -148,7 +148,7 @@ span.and {
 
 h1 {
   font-family: 'BookmanITCLtBTDemiItalic';
-  font-size: 25px;
+  font-size: 205%;
   font-weight: bold;
   border-bottom: 1px solid #D3D3D3;
   margin: 0;
@@ -175,7 +175,7 @@ div.title {
   padding: 10px 0 0 210px;
 }
 p.baseline {
-  font-size: 47px;
+  font-size: 294%;
   font-family: 'BookmanITCLtBTDemiItalic';
   color: #FFF;
   margin: 10px 0;
@@ -189,7 +189,7 @@ p.baseline  span.highlight {
     1px 1px 1px rgba(0,0,0,0.7); /* shadow */
 }
 p.conference {
-  font-size: 19px;
+  font-size: 119%;
   font-family: 'DejaVuSansExtraLight';
   color: #9adcf6;
   margin: 10px 0;
@@ -243,7 +243,7 @@ div.contenu {
   -moz-border-radius-topright: 0px;
   border-top-right-radius: 0px;
   border-top: none;
-  margin-top: 40px;
+  margin-top: 57px;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
@@ -329,7 +329,7 @@ div.droite {
   padding-top: 0px;
   width: 240px;
   font-style: italic;
-  font-size: 14px;
+/*  font-size: 88%;*/
   text-align: center;
   color: #565656;
   margin-bottom: 20px;
@@ -338,7 +338,7 @@ div.droite h2 {
   font-family: 'BookmanITCLtBTDemiItalic';
   font-style: normal;
   color: #158bbb;
-  font-size: 25px;
+  font-size: 156%;
   font-weight: normal;
 /*  margin: 0;*/
   padding: 6px 0;
@@ -352,7 +352,7 @@ div.droite strong {
   color: #0d96ca;
 }
 div.droite a {
-  font-size: 20px;
+  font-size: 125%;
 }
 
 div.droite.partners {
@@ -362,7 +362,7 @@ div.droite.partners {
   padding-top: 0px;
   width: 160px;
   font-style: italic;
-  font-size: 14px;
+  font-size: 88%;
   text-align: center;
   color: #565656;
   border: 2px solid #CBD3D6;
@@ -479,8 +479,8 @@ blockquote {
 }
 .topic{
 	font-style: normal;
-	font-weight: bold;
-    font-size: 1em;
+	font-weight: normal;
+    font-size: 100%;
 }
 cite{
     display: block;
@@ -510,13 +510,22 @@ cite{
   top:-7px;
   left:37px;
 }
-
+/*
 body.home ul.nav li:first-child a, body.speakers ul.nav li:nth-child(3) a, body.about ul.nav li:nth-child(2) a, body.schedule ul.nav li:nth-child(4) a, body.venue ul.nav li:nth-child(5) a{
   color: #ff5b02;
 }
 body.home ul.nav li:first-child, body.speakers ul.nav li:nth-child(3), body.about ul.nav li:nth-child(2), body.schedule ul.nav li:nth-child(4), body.venue ul.nav li:nth-child(5){
   background-position: 0px 2px;
 }
+*/
+/** NEW VERSION **/
+body.home ul.nav li:first-child a, body.schedule ul.nav li:nth-child(2) a, body.speakers ul.nav li:nth-child(3) a, body.venue ul.nav li:nth-child(4) a, body.about ul.nav li:nth-child(5) a{
+  color: #ff5b02;
+}
+body.home ul.nav li:first-child, body.schedule ul.nav li:nth-child(2), body.speakers ul.nav li:nth-child(3), body.venue ul.nav li:nth-child(4), body.about ul.nav li:nth-child(5){
+  background-position: 0px 2px;
+}
+/** NEW VERSION **/
 
 div.partners{
   background-color: #FFF;
@@ -572,7 +581,7 @@ div.droite.partners span.partnersTitle{
 
 span.partnersTitle a.partnersTitle{
   font-family: arial;
-  font-size: 13px;
+  font-size: 110%;
   font-weight: bold;
   font-style: normal;
 }
@@ -585,7 +594,7 @@ div.droite.partners img{
 a.speakerAnchor{
     font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 92%;
     text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* top-left */
         1px 1px 1px rgba(255,255,255,0.2), /* bottom-right */
         1px 1px 1px rgba(0,0,0,0.5); /* shadow */
@@ -711,7 +720,7 @@ div.addthis_toolbox.addthis_default_style.topPosition{
 }
 
 div.droite a.droiteLink{
-	font-size: 16px;
+	font-size: 100%;
 	font-weight: bold;
 }
 
@@ -722,7 +731,7 @@ div.speakersThumbnail{
     background-image: url(../images/postit.png);
     float: left;
     margin: 5px;
-    font-size: 9px;
+    font-size: 56%;
 }
 
 div#speakersThumbnail{
@@ -773,7 +782,7 @@ div.blocDaySchedule .day {
 
 div.blocDaySchedule .day h2 {
     font-family: 'Arial';
-    font-size: 1em;
+    font-size: 100%;
     text-align: center;
     color: #222;
 }
@@ -801,11 +810,11 @@ div.blocDayScheduleDetails div.titre {
   font-weight: bold;
   margin-left: 80px;
   margin-top: 6px;
-  font-size: 20px;
+  font-size: 125%;
 }
 
 div.blocDayScheduleDetails div.titre h2.noStyle{
-    font-size: 1em;
+    font-size: 100%;
 }
 
 div.blocDayScheduleDetails div.description {
@@ -813,14 +822,14 @@ div.blocDayScheduleDetails div.description {
   text-align: justify;
   float: left;
   width: 358px;
-  font-size: 12px;
+  font-size: 75%;
   padding-top: 12px;
 }
 
 div.blocDayScheduleDetails div.duration {
   float: right;
   width: 290px;
-  font-size: 12px;
+  font-size: 75%;
   text-align: right;
 }
 
@@ -867,7 +876,7 @@ div.separator {
 .diaporama .commentaire p {
     padding: 10px;
     color: #FFF;
-    font-size: 18px;
+    font-size: 113%;
     font-weight: bold;
 }
 
@@ -896,3 +905,8 @@ div.separator {
     background: #B4E825;
     border: 1px solid #000;
 }
+
+h3.noStyle.topic {
+  font-size: 1.2em;
+}
+
