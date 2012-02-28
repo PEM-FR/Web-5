@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: arial;
-  font-size: 82%;
+  font-size: 90%;
 /*  background: #056a96;
   background-repeat: no-repeat;*/
   background-color: #ecf1f4;
@@ -243,7 +243,7 @@ div.contenu {
   -moz-border-radius-topright: 0px;
   border-top-right-radius: 0px;
   border-top: none;
-  margin-top: 57px;
+  margin-top: 50px;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
@@ -297,8 +297,8 @@ div.border div.four {
   border-top-right-radius: 5px;
 }
 div.gauche {
-  width: 580px;
-  margin-right: 30px;
+  width: 581px;
+  margin-right: 29px;
   float: left;
 }
 div.gauche em {
@@ -328,7 +328,7 @@ div.droite {
   padding: 20px;
   padding-top: 0px;
   width: 240px;
-  font-style: italic;
+/*  font-style: italic;*/
 /*  font-size: 88%;*/
   text-align: center;
   color: #565656;
@@ -338,15 +338,16 @@ div.droite h2 {
   font-family: 'BookmanITCLtBTDemiItalic';
   font-style: normal;
   color: #158bbb;
-  font-size: 156%;
+  font-size: 182%;
   font-weight: normal;
 /*  margin: 0;*/
-  padding: 6px 0;
+  padding: 0px 0px 12px 0px;
   border-bottom: 1px solid #D3D3D3;
 /*  margin-bottom: 30px;*/
 }
 div.droite p {
   line-height: 22px;
+  font-size: 115%;
 }
 div.droite strong {
   color: #0d96ca;
@@ -620,6 +621,10 @@ a.partnerLink{
     margin: 5px;
 }
 
+a.partnerLink img{
+    padding: 0px;
+}
+
 div.leftJs{
 	float: left;
 	clear: both;
@@ -654,10 +659,11 @@ ul.partnersList li.partnerThumb_150{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	width: 160px;
-	height: 160px;
+	width: 170px;
+	height: 170px;
 	padding: 5px;
 	margin: 2px;
+	margin-top: 15px;
 	line-height: 190px;
 	vertical-align: middle;
 	text-align: center;
@@ -907,6 +913,8 @@ div.separator {
 }
 
 h3.noStyle.topic {
-  font-size: 1.2em;
+  font-family: 'Arial';
+  font-size: 138%;
+  font-weight: normal;
 }
 

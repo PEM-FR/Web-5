@@ -6,7 +6,9 @@ dojo.ready(function(){
             dojo  : [],
             javascript : [],
             perfs  : [],
-            mobile  : []
+            mobile  : [],
+            scala  : [],
+            css4  : [],
         },
         filteredNodes = []
     ;
