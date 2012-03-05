@@ -118,6 +118,7 @@ ul.nav li {
   margin-left: 25px;
   padding-left: 20px;
   background: url(../images/bouclier.png) no-repeat 0px -11px;
+  font-size: 90%;
 }
 ul.nav li:first-child {
   margin-left: 0px;
