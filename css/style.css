@@ -36,7 +36,7 @@ h3 {
 }
 
 .iframeMap {
-  border: 1px solid #ccc;  
+  border: 1px solid #ccc;
   float: right;
   width: 425px;
   margin-bottom: 50px;
@@ -415,10 +415,10 @@ div.calque.soleilJaune {
 div.calque.soleilJaune > div {
   background: url(../images/soleilJaune.png);
   transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%; 
-  -o-transform-origin: 50% 50%; 
-  -ms-transform-origin: 50% 50%; 
-  -webkit-transform-origin: 50% 50%; 
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
 }
 img.drapeau {
   position: absolute;
@@ -809,8 +809,8 @@ div.blocDayScheduleDetails .avatar {
   margin-top: 9px;
   -webkit-border-radius: 12px 0px 12px 0px;
   -moz-border-radius: 12px 0px 12px 0px;
-  border-radius: 12px 0px 12px 0px; 
-  display: block; 
+  border-radius: 12px 0px 12px 0px;
+  display: block;
 }
 
 div.blocDayScheduleDetails div.titre {
@@ -890,7 +890,7 @@ div.separator {
 .diaporamaBoutons {
     bottom: 30px;
     left: 490px;
-    position: relative;    
+    position: relative;
 }
 
 .diaporamaBoutons .bouton{
@@ -921,65 +921,63 @@ h3.noStyle.topic {
 
 /* Mobiles */
 @media (max-width: 1000px),handheld, only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
-	div.bandeau {
-		height:230px;
-	}
-	ul.nav {
-		font-size: 400%;
-		font-weight:bold;
-		left: 0;
-		margin: 0;
-		overflow: hidden;
-		top: -225px;
-		width:auto;
-		padding:0 5px;
-	}
-	ul.nav li {
-		margin-left:5px;
-	}
-	ul.nav li:first-child {
-		margin-left: 5px;
-	}
-	#diaporamaNode,.addthis_toolbox ,.diaporamaBoutons {
-		display:none;
-	}
-	div.droite {
-		font-size:200%;
-	}
-	div.droite p {
-		line-height:120%;
-	}
-	div.title,div.border{
-		display:none;
-	}
-	.home .droite .droiteLink img {
-		width:100%;
-	}
-	div.contenu {
-		margin-top:10px;
-	}
-	div.contenu .gauche p {
-		font-size:150%;
-		margin:0;
-	}
-	div.contenu .gauche h1 {
-		margin-bottom:0;
-	}
-	#logo {
-		display:none;
-	}
-	.venue .gauche .iframeMap {
-		display:none;
-	}
-	.venue div.adresse {
-		height:auto;
-		width:100%;
-	}
-	.venue div.adresse p{
-		font-size:1em;
-	}
-	.venue div.adresse .agrandirCarte{
-		font-size:300%;
-	}
+div.bandeau {
+	height:230px;
 }
-
+ul.nav {
+	font-size: 400%;
+	font-weight:bold;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	top: -225px;
+	width:auto;
+	padding:0 5px;
+}
+ul.nav li {
+	margin-left:5px;
+}
+ul.nav li:first-child {
+	margin-left: 5px;
+}
+#diaporamaNode,.addthis_toolbox ,.diaporamaBoutons {
+	display:none;
+}
+div.droite {
+	font-size:200%;
+}
+div.droite p {
+	line-height:120%;
+}
+div.title,div.border{
+	display:none;
+}
+.home .droite .droiteLink img {
+	width:100%;
+}
+div.contenu {
+	margin-top:10px;
+}
+div.contenu .gauche p {
+	font-size:150%;
+	margin:0;
+}
+div.contenu .gauche h1 {
+	margin-bottom:0;
+}
+#logo {
+	display:none;
+}
+.venue .gauche .iframeMap {
+	display:none;
+}
+.venue div.adresse {
+	height:auto;
+	width:100%;
+}
+.venue div.adresse p{
+	font-size:1em;
+}
+.venue div.adresse .agrandirCarte{
+	font-size:300%;
+}
