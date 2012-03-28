@@ -3,8 +3,8 @@
   <head>
     <title>Conférence Web-5 Nouvelles Technologies,Web,Béziers,4-5-6 Avril 2012</title>
 	<meta name="Author" content="Web-5 Association"/>
-	<meta name="Description" content="L'association Web-5 organise la Conférence Web-5 sur les nouvelles technologies du web, open web, webgl et html5. Les 4, 5 et 6 Avril 2012 à Béziers."/>
-	<meta name="Keywords" content="web-5, conference, javascript, dojo toolkit, webgl, html5, css3, open web, game, web application, france, beziers, experts"/>
+	<meta name="Description" content="L'association Web-5 organise la Conférence Web-5 sur les nouvelles technologies du web, open web, webgl et html5, node.js, scala. Les 4, 5 et 6 Avril 2012 à Béziers."/>
+	<meta name="Keywords" content="web-5, conference, javascript, dojo toolkit, webgl, html5, css3, open web, node.js, web, scala, france, experts"/>
 	<meta name="Generator" content="Human"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="geo.region" content="FR-34" />
@@ -49,15 +49,18 @@
 
         dojo.require("widget.Diaporama");
         dojo.ready(function(){
-            var diaporama = new widget.Diaporama();
-            diaporama.images = [
-                "images/slides/slide1.png",
-                "images/slides/slide2.png",
-                "images/slides/slide3.png",
-                "images/slides/slide4.png"
-            ];
-            diaporama.node = "diaporamaNode";
-            diaporama.init();
+			console.log(dojo.byId("diaporamaNode").style.display);
+			if(dojo.byId("diaporamaNode").style.display != "none"){
+				var diaporama = new widget.Diaporama();
+					diaporama.images = [
+						"images/slides/slide1.png",
+						"images/slides/slide2.png",
+						"images/slides/slide3.png",
+						"images/slides/slide4.png"
+					];
+					diaporama.node = "diaporamaNode";
+					diaporama.init();
+			}
         });
 	</script>
 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef856c53d57d0e6"></script>
@@ -141,31 +144,23 @@ W::::::W                           W::::::W                b:::::b              
 		  <p><br />
 			La première conférence Web-5 aura lieu à Béziers, dans l'Hérault (34) les <strong>4, 5 et 6 Avril 2012</strong>.<br/>
 			Elle a pour objet de faire découvrir et partager de <strong>nouvelles
-			technologies</strong> et techniques javascript, html5, css3, webgl, grâce à une approche pratique et concrète.
+			technologies</strong> et techniques javascript, html5, css3, webgl, grâce à une approche pratique, concrète et de très haut niveau.
 			Cette conférence s'adresse aussi bien aux directeurs techniques, développeurs qu'aux administrateurs systèmes ayant un <strong>bon niveau d'expertise</strong>.
 			Les nouvelles technologies et techniques abordées lors des différentes présentations vous aideront à donner un souffle nouveau sur vos travaux en cours ou à venir.</p>
 			<p>L'objectif de la conférence Web-5 est de montrer que tous ces mots (<strong>WebGL, Dojo Toolkit, SocketIO, NodeJS, HTML5, JavaScript</strong>)
 			ne sont pas que des buzzwords, mais proposent de réelles opportunités en terme de développement d'application client.<br/>
-			Que vous soyez en environnement <strong>mobile</strong> ou desktop, <br/>Que vous développiez une <strong>application d'entreprise</strong> ou <strong>grand public</strong>, <br/>
+			Que vous soyez en environnement <strong>mobile</strong> ou desktop, <br/>Que vous développiez une application d'entreprise ou grand public, <br/>
 			Que vous ayez besoin de <strong>performances</strong> ou de <strong>scalabilité</strong>, <br/>
-			vous avez l'assurance de trouver de nombreuses <strong>informations intéressantes</strong> tout au long de la conférence Web-5.</p>
-			<p>Cet événement sera l'occasion de rassembler une communauté d'acteurs du web
-			français et internationaux autour de personnalités reconnues
-			pour leur expertise et leur passion, le tout dans une ambiance décontractée.
+			vous avez l'assurance de trouver de nombreuses informations intéressantes tout au long de la conférence Web-5.</p>
+			<p>Cet événement sera l'occasion de rassembler une communauté d'acteurs du web français et internationaux autour de personnalités reconnues pour leur expertise et leur passion, le tout dans une ambiance décontractée.
 		  </p>
 		  <p>
-			<em>
-			  La Conférence Web-5 sera tenue sur deux jours et demi, les
-			  4, 5 et 6 Avril 2012 à l'IUT de Béziers.
-			</em>
-			<br/>
+			<em>La Conférence Web-5 sera tenue sur trois jours, les 4, 5 et 6 Avril 2012 à l'IUT de Béziers.</em><br/>
 			Les thèmes principaux seront : Javascript, Html 5 &amp; CSS 3, WebGL, Dojo Toolkit, Socket.io, Node.js, le développement Mobile, Scala et le framework Play2! ainsi que les Performances Web.<br/><br/>
 			Vous pouvez nous retrouver sur notre channel irc : <a href="http://bit.ly/chat-web-5" title="Web-5 Irc Channel" target="_blank">Web-5 Irc Channel</a><br/>
 			Ou sur twitter en suivant <a href="http://twitter.com/#!/web5_conf" target="_blank">@web5_conf</a>
 		  </p>
-		  <p>
-			A noter qu'il existe un aéroport ryanair à Béziers avec une liaison Paris - Béziers.
-		  </p>
+		  <p>A noter qu'il existe un aéroport ryanair à Béziers avec une liaison Paris - Béziers.</p>
 		  <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 			<a class="addthis_button_preferred_1"></a>
 			<a class="addthis_button_preferred_2"></a>
@@ -178,7 +173,7 @@ W::::::W                           W::::::W                b:::::b              
 
 		<div class="droite">
 		  <h2>Rejoignez-nous !</h2>
-		  <p><br/><strong>Réservez vos places dès maintenant ! </strong><br/><a class="droiteLink" href="http://web-5.eventsbot.com" title="Réservez vos places" target="_blank"><img src="http://www.eventsbot.com/images/Reg-4.jpg" style="border-width:0px;" alt="Prendre mon billet"/></a></p>
+		  <p><br/><strong>Plus que trois semaines ! </strong><br/><a class="droiteLink" href="http://web-5.eventsbot.com" title="Réservez vos places" target="_blank"><img src="http://www.eventsbot.com/images/Reg-4.jpg" style="border-width:0px;" alt="Réserver ma place"/></a></p>
 	      <p><br/>Vous pouvez nous suivre sur twitter <strong>@web5_conf</strong> ou sur irc freenode chan <strong>#web-5</strong><br/><br/>Vous pouvez aussi nous contacter par email à : <strong>infos at web-5.org</strong></p>
 		</div>
 
@@ -219,8 +214,11 @@ W::::::W                           W::::::W                b:::::b              
 				<a class="partnerLink" href="partners.html" title="Devenez partenaire de l'événement"><img src="images/votrelogoici.png" alt="Votre Logo ici" class="yourLogoHere"/></a>
 			  </li>
 		  </ul>
-          <h2 class="partners">Les Sponsors</h2>
+          <h2 class="partners">Les Parraineurs</h2>
 		  <ul class="partnersList">
+			  <li class="partnerThumb_100">
+				<a class="partnerLink" href="http://www.wakanda.org/" title="Wakanda" target="_blank" rel="external contact colleague"><img src="images/partners/wakanda_100.png" alt="Wakanda"/></a>
+			  </li>
 			  <li class="partnerThumb_100">
 				<a class="partnerLink" href="partners.html" title="Devenez partenaire de l'événement"><img src="images/votrelogoici_100.png" alt="Votre Logo ici" class="yourLogoHere"/></a>
 			  </li>
@@ -234,7 +232,7 @@ W::::::W                           W::::::W                b:::::b              
 				<a class="partnerLink" href="http://www.github.com/" title="Github" target="_blank" rel="external contact colleague"><img src="images/partners/github_80.png" alt="Github"/></a><br /><br />
 			  </li>
 			  <li class="partnerThumb_80">
-				<a class="partnerLink" href="http://www.bloxx.fr/" title="Bloxx" target="_blank" rel="external contact colleague"><img src="images/partners/bloxx_80.png" alt="Bloxx"/></a><br /><br />
+				<a class="partnerLink" href="http://www.bloxx.fr/2012/01/25/offre-emploi-web-developpeur" title="Bloxx" target="_blank" rel="external contact colleague"><img src="images/partners/bloxx_80.png" alt="Bloxx"/></a><br /><br />
 			  </li>
 			  <li class="partnerThumb_80">
 				<a class="partnerLink" href="partners.html" title="Devenez partenaire de l'événement"><img src="images/votrelogoici_80.png" alt="Votre Logo ici" class="yourLogoHere"/></a>
@@ -244,6 +242,9 @@ W::::::W                           W::::::W                b:::::b              
 		  <ul class="partnersList">
 			  <li class="partnerThumb_80">
 				<a class="partnerLink" href="http://phpsolmag.org/?a_aid=nataliazadykowicz" title="PHPSolutions"><img src="images/partners/phpsolutions_80.jpg" alt="PHPSolutions"/></a>
+			  </li>
+			  <li class="partnerThumb_80">
+				<a class="partnerLink" href="http://www.celinedesign.com/" title="Celine Design"><img src="images/partners/celinedesign_80.jpg" alt="Celine Design"/></a>
 			  </li>
 			  <li class="partnerThumb_80">
 				<a class="partnerLink" href="partners.html" title="Devenez partenaire de l'événement"><img src="images/votrelogoici_80.png" alt="Votre Logo ici" class="yourLogoHere"/></a>
